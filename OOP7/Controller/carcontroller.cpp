@@ -25,7 +25,6 @@ vector<ElectricCar> car_controller::CarController::filter_by_kilometers(int km) 
     return result;
 }
 
-///facuta nou, spune-i lui Bogdan
 vector<ElectricCar> car_controller::CarController::filter_by_age(int age) {
     vector<ElectricCar> result = {};
     vector<ElectricCar> product_list = repo->get_el_car_list();
@@ -35,7 +34,6 @@ vector<ElectricCar> car_controller::CarController::filter_by_age(int age) {
 }
 
 
-///facuta nou, spune-i lui Bogdan
 vector<ElectricCar> car_controller::CarController::search_by_model(const string &name_part) {
     vector<ElectricCar> result = {};
     vector<ElectricCar> product_list = repo->get_el_car_list();
@@ -46,7 +44,7 @@ vector<ElectricCar> car_controller::CarController::search_by_model(const string 
     return result;
 }
 
-///facuta nou, spune-i lui Bogdan
+
 vector<ElectricCar> car_controller::CarController::search_by_manufacturer(const string &name_part) {
     vector<ElectricCar> result = {};
     vector<ElectricCar> product_list = repo->get_el_car_list();
